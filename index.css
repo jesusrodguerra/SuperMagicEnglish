@@ -416,6 +416,13 @@
 }
 /* /QUICK CONTACT */
 
+/* Complementos */
+.complementos-content {
+    text-align: center;
+    font-size: 22px;
+}
+/* /Complementos */
+
 /* Media Query */
 @media(max-width: 425px) {
 
@@ -436,7 +443,7 @@
     }
 
     .title-bg {
-        background-size: contain;
+        background-size: 101% 108%;
     }
 
     .title-header-container {
@@ -487,6 +494,10 @@
         width: 200px;
         height: 200px;
       }
+    
+      .complementos-content {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 375px) {
