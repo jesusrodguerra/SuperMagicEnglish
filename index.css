@@ -35,26 +35,34 @@
 }
 
 .title-header-container {
+    height: 500px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .title-header-container h2 {
     color: #6f42c1;
     width: 430px;
+    font-size: 46px;
 }
 
 .title-header-container h2 span{
     color: #0084ff;
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 800;
 }
 
 .title-header-container h4 {
     width: 430px;
     color: #ff5252;
+}
+
+.title-header-container img {
+    width: 100px;
+    transform: rotate(151deg);
 }
 
 .title-banner {
@@ -84,7 +92,7 @@
 .registro {
     padding: 12px;
     width: 300px;
-    height: 325px;
+    height: 350px;
     border-radius: 16px;
     box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.15);
     background: #fff;
@@ -147,18 +155,36 @@
     margin-top: 50px;
 }
 
-#comoFunciona p {
-    font-size: 23px;
-    color: white;
+.comoFunciona-title-description p {
+    font-size: 28px;
+    color: black;
+    padding: 0 100px;
 }
 
-.texto-comoFunciona h3 {
-    color: #e0fb00;
-    font-size: 34px;
+.texto-comoFunciona p {
+    color: white;
+    font-size: 24px;
+}
+
+.texto-comoFunciona span {
+    font-size: 32px;
+    color: #fff80d;
+}
+
+.title-comoFunciona {
+    color: #fff80d;
+    font-size: 36px;
+    margin-top: 12px;
 }
 
 #comoFunciona .contenedor{
     background-image: url('images/FondoComoFunciona.png');
+}
+
+.imagen-comoFunciona-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagen-comoFunciona {
@@ -168,10 +194,9 @@
 }
 
 .imagen-comoFunciona img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
-    border: 6px solid #00bcd4;
 }
 /* /Como Funciona */
 
@@ -222,15 +247,19 @@
     background-image: url('images/FondoCardG.png');
 }
 
-#epd {
+#ambienteSeguro {
     background-image: url('images/FondoCardO.png');
+}
+
+#epd {
+    background-image: url('images/FondoCardP.png');
 }
 /* /Beneficios */
 
 /* MAS USADA */
 #masUsado{
-    background-position: 75% 100%;
-    background-image: url('images/imagenCarKids2.png');
+    background-position: 75% 60%;
+    background-image: url('images/globe.png');
     box-shadow: 0px 1px 2px 0px rgba(60, 64, 67, 0.3), 0px 2px 6px 2px rgba(60, 64, 67, 0.15);
     margin-bottom: 40px;
     border-radius: 12px;
@@ -249,6 +278,7 @@
 .masUsado-texto p {
     font-size: 24px;
     margin-bottom: 0;
+    color: black;
     display: flex;
     align-items: center;
 }
@@ -264,6 +294,10 @@
     background-position: center;
     /* background-color: #43cb7b; */
     padding: 30px;
+}
+
+.kits-description {
+    font-size: 32px;
 }
   
 .kit-container {
@@ -286,7 +320,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #265C9A;
+    background-color: #6f42c1;
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px;
     color:white;
@@ -299,12 +333,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #265C9A;
+    background-color: #28A745;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     color:white;
     padding: 12px;
     font-size: 18px;
+}
+
+#color-red {
+    background-color: #ff5252;
 }
   
 .imagen-rigth {
@@ -360,7 +398,7 @@
 }
   
 .location-contenedor img {
-    width: 50px;
+    width: 80px;
     margin-top: 12px;
     position: relative;
     z-index: 2;
@@ -397,8 +435,32 @@
         max-width: 100%;
     }
 
+    .title-bg {
+        background-size: contain;
+    }
+
+    .title-header-container {
+        height: 216px;
+    }
+
+    .title-header-container h1 {
+        margin-bottom: 0;
+    }
+
+    .title-header-container h2 {
+        font-size: 32px;
+    }
+
     .title-header-container h4 {
         display: none;
+    }
+
+    .title-header-container img {
+        display: none;
+    }
+
+    .comoFunciona-title-description p {
+        padding: 0;
     }
 
     .kit-container {
