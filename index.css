@@ -150,6 +150,17 @@
 }
 /* /HEADER TITLE & FORM */
 
+/* Eslogan */
+#eslogan {
+    background-color: #fd5868;
+    background-image: url('images/BannerSinFondo.png');
+    background-size: 80%;
+    background-position: center 148%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
+/* /Eslogan */
+
 /* Como Funciona */
 #comoFunciona {
     margin-top: 50px;
@@ -177,6 +188,11 @@
     margin-top: 12px;
 }
 
+.texto-etapas-comoFunciona {
+    color: white;
+    margin-left: 18px;
+}
+
 #comoFunciona .contenedor{
     background-image: url('images/FondoComoFunciona.png');
 }
@@ -184,7 +200,6 @@
 .imagen-comoFunciona-contenedor {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .imagen-comoFunciona {
@@ -194,9 +209,13 @@
 }
 
 .imagen-comoFunciona img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 100%;
+}
+
+#imagen-kids-comoFunciona img {
+    object-fit: cover;
 }
 /* /Como Funciona */
 
@@ -254,6 +273,11 @@
 #epd {
     background-image: url('images/FondoCardP.png');
 }
+
+#epd p {
+    padding: 0 8px 0 8px;
+    text-align: justify;
+}
 /* /Beneficios */
 
 /* MAS USADA */
@@ -273,6 +297,7 @@
   
 .masUsado-texto {
     display: flex;
+    justify-content: center;
 }
   
 .masUsado-texto p {
@@ -283,9 +308,20 @@
     align-items: center;
 }
 
+.title-masUsado {
+    display: flex;
+    justify-content: center;
+}
+
 .title-masUsado h2 {
     color: #0084ff;
-} 
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+.title-masUsado img {
+    width: 50px;
+}
 /* /MAS USADA */
 
 /* Kits */
@@ -341,8 +377,8 @@
     font-size: 18px;
 }
 
-#color-red {
-    background-color: #ff5252;
+#color-blue {
+    background-color: #17A2B8;
 }
   
 .imagen-rigth {
@@ -498,6 +534,17 @@
       .complementos-content {
         font-size: 18px;
     }
+
+    .imagen-eslogan img {
+        width: 401px;
+        margin-top: 52px;
+    }
+
+    #eslogan {
+        background-size: 173%;
+        background-position: center 174%;
+        height: 504px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -525,6 +572,25 @@
 
     .title-header-container {
         align-items: center;
+    }
+
+    .imagen-eslogan img {
+        width: 301px;
+        margin-top: 52px;
+    }
+
+    #eslogan {
+        background-size: 173%;
+        background-position: center 174%;
+        height: 423px;
+    }
+  }
+
+  @media(max-width: 320px) {
+    #eslogan {
+        background-size: 173%;
+        background-position: center 174%;
+        height: 385px;
     }
   }
 /* /Media Query */
