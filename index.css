@@ -2,6 +2,22 @@
     font-family: 'Itim', cursive;
 }
 
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: black;
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto */;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: black;
+   opacity:  1;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+}
+
+
 .title-bg {
     background-image: url('images/banner-title.webp');
     background-repeat: no-repeat;
@@ -32,6 +48,10 @@
 #main {
     height: 80vh;
     background-image: url('images/BannerKids.png');
+}
+
+.row {
+    margin: 0px;
 }
 
 .title-header-container {
@@ -112,6 +132,10 @@
     margin: 4px;
 }
 
+.input-usuario input {
+    width: 100%;
+}
+
 .selector {
     margin-left: 4px;
     margin-top: 6px;
@@ -152,13 +176,17 @@
 
 /* Eslogan */
 #eslogan {
-    background-color: #fd5868;
+    background-color: #ff5252;
     background-image: url('images/BannerSinFondo.png');
     background-size: 80%;
-    background-position: center 148%;
-    height: 800px;
+    background-position: center 250%;
+    height: 670px;
     background-repeat: no-repeat;
 }
+
+.imagen-eslogan img {
+    margin-top: 45px;
+} 
 /* /Eslogan */
 
 /* Como Funciona */
